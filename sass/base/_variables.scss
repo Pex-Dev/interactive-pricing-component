@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('../fonts/Manrope-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url('../fonts/Manrope-SemiBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+$fuenteBold: 'Manrope-Bold', sans-serif;
+$fuenteNormal: 'Manrope-SemiBold', sans-serif;
+
+$gris: #99A0B1;
+$azulClaro: #d0d7ef;
+$azul: #303356;
+$blanco: #ffffff;
+$blancoFondo: #f9faff;
+$turquesaClaro: #8af8e9;
+$turquesaOscuro: #11d4c2;
+$turquesaMasOscuro: #23aea1;
+$naranja: #feede7;
+$naranjaOscuro: #e29e8f;
+$celeste: #b7c2ec;

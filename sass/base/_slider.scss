@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: v.$turquesaClaro;
+    height: 0.7rem;
+    border-radius: 1rem;    
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 4rem;
+      height: 4rem;
+      background-color: v.$turquesaOscuro;      
+      background-image: url('../images/icon-slider.svg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      cursor: pointer;
+      border-radius: 50%;
+      -webkit-box-shadow: 10px 10px 29px 0px rgba(146,255,248,1);
+      -moz-box-shadow: 10px 10px 29px 0px rgba(146,255,248,1);
+      box-shadow: 10px 10px 29px 0px rgba(146,255,248,1);
+    }    
+    &.active{
+      &::-webkit-slider-thumb {
+        background-color: v.$turquesaMasOscuro;
+        cursor: grabbing;
+      }
+    }
+  }
+  

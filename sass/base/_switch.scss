@@ -1,0 +1,24 @@
+@use '../base/variables' as v;
+.switch{
+    background-color: v.$azulClaro;
+    border: none;
+    min-width: 4.7rem;
+    height: 2.4rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    padding: .4rem;
+    cursor: pointer;
+    
+    .slider-round{
+        background-color: v.$blanco;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 1rem;
+        transition: transform 0.3s ease;
+
+        &.active{
+            transform: translateX(2.3rem);
+        }
+    }    
+}

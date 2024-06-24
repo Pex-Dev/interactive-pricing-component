@@ -1,0 +1,106 @@
+@use '../base/variables' as v;
+
+.pricing{
+    .pricing-details{
+        padding: 4rem 4rem 0 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        .pageviews{
+            text-transform: uppercase;
+            font-family: v.$fuenteBold;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+        }
+
+        .price{
+            display: flex;
+            align-items: center;
+            font-size: 4rem;
+
+            span{
+                margin-left: .4rem;
+                color: v.$gris;
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+            }
+        }
+        .slider{
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            grid-column: span 2;
+            width: 100%;
+        }
+        @media (max-width:580px) {
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 2rem 0 2rem;
+            h2{
+                order: 3;
+            }
+            .slider{
+                margin-top: 2.7rem;
+                order: 2;
+            }
+        }
+        
+    }
+    .billing{
+        margin: 1rem 4rem 4rem 4rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;  
+        @media (max-width:580px) {
+            margin-top:0;
+            margin: 1rem 2rem 4rem 2rem;
+        }
+        @media (max-width:397px) {
+            margin-top:0;
+            margin: 0 0 4rem 2rem;
+            gap: 1;  
+        }
+        .discount{
+            background-color: v.$naranja;
+            color: v.$naranjaOscuro;
+            padding: .3rem .4rem .3rem .4rem;
+            border-radius: 1rem;
+            font-size: 1rem;
+            margin-right: 1.5rem;
+            min-width: 4rem;
+            @media (max-width: 580px) {
+                span{
+                    display: none;
+                }
+                &::before {
+                  content: "-";
+                }
+            }
+        }
+    }
+
+    .pricing-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 4rem 4rem 4rem;  
+        border-top: 1px solid #F1F1F4;
+        @media (max-width:580px) {
+            padding: 4rem 2rem 4rem 2rem;   
+            flex-direction: column;
+            text-align: center;
+            gap: 3rem;
+        }
+
+        .benefits{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            li{
+                img{
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
